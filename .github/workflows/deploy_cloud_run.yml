@@ -12,11 +12,11 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      REGION: MY_REGION                     # edit here
-      PROJECT_ID: MY_PROJECT_ID             # edit here
-      REPOSITORY: MY_ARTIFACT_REPOSITORY    # edit here
-      SERVICE_ACCOUNT: MY_SERVICE_ACCOUNT   # edit here
-      SERVICE_NAME: MY_SERVICE_NAME         # edit here
+      REGION: us-central1
+      PROJECT_ID: traductor-project-01
+      REPOSITORY: mlflow
+      SERVICE_ACCOUNT: mlflow   
+      SERVICE_NAME: mlflow-server
 
     steps:
     - name: Checkout
