@@ -4,16 +4,16 @@
 import pandas as pd
 import numpy as np
 from datetime import datetime
-
+import os
 import mlflow
 from mlflow.models import infer_signature
-
+from dotenv import load_dotenv
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import ElasticNet
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
-
+load_dotenv()
 # Define the tracking URI for the MLflow experiment
-TRACKING_URI = "YOUR-URI-FROM-CLOUD-RUN"
+TRACKING_URI = os.environ.get("CLOUD_RUN_ROUTE")
 
 # Read the wine-quality dataset from a CSV file
 csv_url = "https://raw.githubusercontent.com/mlflow/mlflow/master/tests/datasets/winequality-red.csv"
