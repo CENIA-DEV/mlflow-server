@@ -52,6 +52,5 @@ jobs:
           --update-secrets=STORAGE_URL=bucket_url:latest \
           --memory 2Gi \
           --timeout 3600 \
-          --use-http2 \
           --allow-unauthenticated \
           --port 8080
