@@ -50,7 +50,7 @@ jobs:
           --update-secrets=/secrets/credentials=access_keys:latest \
           --update-secrets=POSTGRESQL_URL=database_url:latest \
           --update-secrets=STORAGE_URL=bucket_url:latest \
-          --memory 8Gi \
+          --memory 2Gi \
           --timeout 3600 \
           --use-http2 \
           --allow-unauthenticated \
